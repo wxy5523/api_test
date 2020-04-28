@@ -1,0 +1,67 @@
+[2020-04-08 18:46:09] INFO [<module>: config.py, 10] hello
+[2020-04-08 18:50:31] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-08 18:50:33] ERROR [send_email: send_email.py, 28] (535, b'5.7.8 authentication failed')
+[2020-04-08 18:50:33] INFO [<module>: run_all.py, 13] ================================== 测试结束 ==================================
+[2020-04-08 18:52:42] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-08 18:52:42] ERROR [send_email: send_email.py, 28] (535, b'5.7.8 authentication failed')
+[2020-04-08 18:52:42] INFO [<module>: run_all.py, 13] ================================== 测试结束 ==================================
+[2020-04-08 18:56:36] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-08 18:56:36] ERROR [send_email: send_email.py, 28] (535, b'5.7.8 authentication failed')
+[2020-04-08 18:56:36] INFO [<module>: run_all.py, 13] ================================== 测试结束 ==================================
+[2020-04-08 19:00:56] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-08 19:00:57] ERROR [send_email: send_email.py, 28] (535, b'5.7.8 authentication failed')
+[2020-04-08 19:00:57] INFO [<module>: run_all.py, 13] ================================== 测试结束 ==================================
+[2020-04-08 19:18:08] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-08 19:18:09] ERROR [send_email: send_email.py, 28] (535, b'5.7.8 authentication failed')
+[2020-04-08 19:18:09] INFO [<module>: run_all.py, 13] ================================== 测试结束 ==================================
+[2020-04-09 19:24:19] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-09 19:25:30] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-09 19:37:17] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-09 19:37:18] ERROR [send_email: send_email.py, 46] (535, b'5.7.8 authentication failed')
+[2020-04-09 19:37:18] INFO [<module>: run_all.py, 13] ================================== 测试结束 ==================================
+[2020-04-09 19:52:48] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-09 19:52:49] ERROR [send_email: send_email.py, 46] {'3314501475@qq.com': (550, b'Mailbox not found or access denied.')}
+[2020-04-09 19:52:49] INFO [<module>: run_all.py, 13] ================================== 测试结束 ==================================
+[2020-04-09 19:53:45] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-09 19:53:46] INFO [send_email: send_email.py, 44] 邮件发送完成！
+[2020-04-09 19:53:46] INFO [<module>: run_all.py, 13] ================================== 测试结束 ==================================
+[2020-04-09 20:19:32] INFO [<module>: run_all.py, 6] ================================== 测试开始 ==================================
+[2020-04-09 20:19:33] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-09 20:19:33] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 33
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户不存在</h1>
+[2020-04-09 20:19:33] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-09 20:19:33] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 33
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_password_wrong
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"1234567"}
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>失败，用户名或密码错误</h1>
+[2020-04-09 20:19:33] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户不存在</h1>
+[2020-04-09 20:19:33] DEBUG [query_db: db.py, 21] select * from user where name = '张三'
+[2020-04-09 20:19:33] DEBUG [query_db: db.py, 21] select * from user where name = '范冰冰'
+[2020-04-09 20:19:34] INFO [send_email: send_email.py, 44] 邮件发送完成！
+[2020-04-09 20:19:34] INFO [<module>: run_all.py, 13] ================================== 测试结束 ==================================
+[2020-04-09 20:24:12] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-09 20:24:12] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 33
+[2020-04-09 20:24:12] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2020-04-09 20:24:12] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2020-04-09 20:24:12] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2020-04-09 20:24:12] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2020-04-09 20:24:12] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户不存在</h1>
+[2020-04-09 20:25:28] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-09 20:25:28] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 33
+[2020-04-09 20:25:28] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2020-04-09 20:25:28] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2020-04-09 20:25:28] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2020-04-09 20:25:28] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2020-04-09 20:25:28] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户不存在</h1>
+[2020-04-09 20:27:22] DEBUG [_new_conn: connectionpool.py, 225] Starting new HTTP connection (1): 115.28.108.130:5000
+[2020-04-09 20:27:22] DEBUG [_make_request: connectionpool.py, 437] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 33
+[2020-04-09 20:27:22] INFO [log_case_info: case_log.py, 10] 测试用例：test_user_login_normal
+[2020-04-09 20:27:22] INFO [log_case_info: case_log.py, 11] url：http://115.28.108.130:5000/api/user/login/
+[2020-04-09 20:27:22] INFO [log_case_info: case_log.py, 12] 请求参数：{"name": "张三","password":"123456"}
+[2020-04-09 20:27:22] INFO [log_case_info: case_log.py, 13] 期望结果：<h1>登录成功</h1>
+[2020-04-09 20:27:22] INFO [log_case_info: case_log.py, 14] 实际结果：<h1>失败，用户不存在</h1>
